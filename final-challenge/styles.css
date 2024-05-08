@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-primary: #3b4050;
+  --clr-primary-darker: #2e323f;
+  --clr-secondary: #fff;
+  --clr-secondary--darker: #6f737f;
+  --clr-font: #a59678;
+  --font-bold: "Oswald", sans-serif;
+  --font-regular: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hamburg */
+
+.hamburg {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+}
+.hamburg .bar {
+  width: 16px;
+  background-color: white;
+  height: 4px;
+  border: 1px solid black;
+}
+
+.bar + .bar {
+  margin-top: 1px;
+}
+
+/* Header */
+
+header {
+  background-color: var(--clr-primary-darker);
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav {
+  display: none;
+}
+
+.nav--visible {
+  display: block;
+}
+
+.nav--visible ul {
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin: auto;
+}
+
+/* =Nav= */
+
+.nav--link {
+  text-decoration: none;
+  color: var(--clr-secondary);
+  font-family: var(--font-bold);
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+.nav--item {
+  margin-top: 0.7rem;
+}
+
+.nav--button {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary-darker);
+  padding: 0.9em 1em;
+}
