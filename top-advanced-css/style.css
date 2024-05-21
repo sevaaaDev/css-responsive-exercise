@@ -20,6 +20,7 @@ img {
 .hero__img img {
   margin-inline: auto;
   display: block;
+  line-height: 0;
 }
 
 nav ul {
@@ -75,6 +76,12 @@ nav ul {
   text-align: center;
 }
 
+.section__about-me {
+  /* border-bottom: 1px solid black; */
+  padding: 1rem 0;
+  margin-block-end: 6rem;
+}
+
 .section__about-me--text {
   font-family: var(--sans-serif);
   font-size: 1.2rem;
@@ -82,11 +89,17 @@ nav ul {
   opacity: 0.8;
 }
 
+.project__container {
+  margin-top: 1rem;
+}
+
 .project__item {
-  display: grid;
-  min-height: 400px;
-  grid-template-rows: auto 1fr;
-  border: 1px solid black;
+  margin-bottom: 2rem;
+  box-shadow: 1px 1px 10px #aaa;
+}
+
+.project__item img {
+  width: 100%;
 }
 
 .project__nav {
@@ -110,4 +123,50 @@ nav ul {
   margin-inline-end: auto;
   font-family: var(--sans-serif);
   font-size: 1.5rem;
+}
+
+.footer {
+  background-color: var(--clr-secondary);
+}
+
+.contact-me {
+  font-weight: 400;
+  font-family: var(--serif);
+  text-align: center;
+  font-size: 3rem;
+  margin-block-end: 1rem;
+}
+
+.footer-message {
+  font-size: 1.2rem;
+  font-family: var(--sans-serif);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-block: 2rem;
+}
+
+.links img {
+  width: 48px;
+}
+
+@media (min-width: 750px) {
+  .hero__img {
+    float: left;
+    margin-block-start: -4rem;
+    margin-block-end: 0px;
+    margin-inline-end: 1rem;
+  }
+
+  /* TODO: add more margin for name*/
+
+  .section__about-me {
+    background-color: white;
+    margin-block-start: 4rem;
+    margin-inline-start: 3rem;
+    padding: 3rem 1rem;
+  }
 }
